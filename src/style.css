@@ -18,5 +18,11 @@ div{
     transform: skew(30deg, 30deg) scale(0.7, 1);
     /* Também é possível passar tudo de forma inline */
 
+    -webkit-transform: rotate(10deg); /* O webkit "compatibiliza" certas funcionalidades do CSS que
+    ainda não foram lançadas para navegadore desatualizados  */
+
+    -ms-transform: rotate(10deg); /* Para navegadores da Microsoft   */
+    -moz-transform: rotate(10deg); /* Para o firefox  */
+
     background-color: rebeccapurple;
 }
