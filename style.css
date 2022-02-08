@@ -1,0 +1,22 @@
+img{
+    width: 420px;
+    transform: rotate(-45deg); 
+    /* Caso seja usada propiedade que não defina se é para x ou y, a trasformação ira 
+    ocorrer nos dois eixos */
+
+    transform: scale(0.5, 1);
+    /* Aqui, a transformação ocorre primeiro no eixo X e dps no Y */
+
+    transform: skewX(30deg); /* skew ==> efeito 3D */
+    transform: skewY(30deg);
+    /* Primiero defini uma prop somente par X e dps para Y */
+}
+
+div{
+    width: 320px;
+    height: 200px;
+    transform: skew(30deg, 30deg) scale(0.7, 1);
+    /* Também é possível passar tudo de forma inline */
+
+    background-color: rebeccapurple;
+}
